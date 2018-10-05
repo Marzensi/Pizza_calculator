@@ -1,0 +1,131 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black url("../../images/pizza.jpg") center/cover no-repeat;
+  height:100vh;
+}
+
+h1{
+  padding: 0 0 15px 0;
+  font-size: 2.5em;
+}
+
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.ingredients-box{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  background-color: rgba(250, 250, 250, 0.4);
+  border-radius: 70px 0 70px 0;
+}
+
+.ingredients-calculator{
+  padding:50px;
+}
+
+.sum{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.panel{
+  padding: 50px;
+  font-size: 1.2em;
+}
+
+.all-checked{
+  font-weight:bold;
+}
+
+.checkbox{
+  padding:5px;
+}
+
+.label-container{
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 35px;
+}
+
+.label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #FC744A;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.clear-all{
+  border:none;
+  background-color: #DB706B;
+  padding:10px;
+  border-radius:10px;
+  font-size: 0.9em;
+  color:#eee;
+}
+
+.clear-all:hover{
+  box-shadow: 0 0 5px #fff, 0 0 8px #fff;
+}

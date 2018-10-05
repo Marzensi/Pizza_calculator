@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza calculator</title>
+</head>
+<body>
+    <div class="container">
+      <div class="ingredients-box">
+        <div class="ingredients-calculator">
+          <h1>Dodatki</h1>
+          <p class="sum">Suma: <span id="price">0 zł</span></p>
+        </div>
+        <div class="panel">
+          <div class="ingredients">
+            <form>
+              <div class="checkbox">
+              <label for="all-checked" class="label-container all-checked">
+                <input id="all-checked" type="checkbox">
+                <span class="checkmark"></span>
+                Zaznacz wszystko
+              </label>
+            </div>
+              <div class="checkbox">
+                <label for="ingredient1" class="label-container">
+                  <input id="ingredient1" type="checkbox" data-price="3.00">
+                  <span class="checkmark"></span>
+                  Szynka parmeńska, 3,00 zł
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="ingredient2" class="label-container">
+                  <input id="ingredient2" type="checkbox" data-price="2.50">
+                  <span class="checkmark"></span>
+                  Sos czosnkowy
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="ingredient3" class="label-container">
+                  <input id="ingredient3" type="checkbox" data-price="2.50">
+                  <span class="checkmark"></span>
+                  Sos pomidorowy
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="ingredient4" class="label-container">
+                  <input id="ingredient4" type="checkbox" data-price="3.50">
+                  <span class="checkmark"></span>
+                  Pieczarki
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="ingredient5" class="label-container">
+                  <input id="ingredient5" type="checkbox" data-price="3.50">
+                  <span class="checkmark"></span>
+                  Podwójny ser
+                </label>
+              </div>
+              <div class="checkbox">
+                <label for="ingredient6" class="label-container">
+                  <input id="ingredient6" type="checkbox" data-price="4.00">
+                  <span class="checkmark"></span>
+                  Ananas
+                </label>
+              </div>
+            </form>
+            <div class="btn-box">
+              <button class="clear-all">Wyczyść</button>
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>
