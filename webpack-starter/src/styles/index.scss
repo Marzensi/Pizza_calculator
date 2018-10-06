@@ -32,7 +32,6 @@ h1{
 
 .ingredients-calculator{
   padding:50px;
-  width: 250px;
 }
 
 .sum{
@@ -86,7 +85,7 @@ h1{
   background-color: #ccc;
 }
 
-.checkmark-color {
+.container input:checked ~ .checkmark {
   background-color: #FC744A;
 }
 
@@ -95,15 +94,14 @@ h1{
   position: absolute;
   display: none;
 }
+
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-.checkmark-sign {
-  opacity:0;
-  position:absolute;
-  left: 7px;
-  top: 4px;
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
   width: 5px;
   height: 10px;
   border: solid white;
